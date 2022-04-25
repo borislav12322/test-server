@@ -1,0 +1,28 @@
+{
+  "applicationList": [
+    {
+      "id": 1,
+      "visitorName": "Иванов Иван Алексеевич",
+      "name": "Ожидание",
+      "passPeriod": "20.10.2022",
+      "status": "Завершено",
+      "info": "info"
+    },
+    {
+      "id": 2,
+      "visitorName": "Анисимова Александра Александровна",
+      "name": "Ожидание",
+      "passPeriod": "20.10.2022",
+      "status": "Завершено",
+      "info": "info"
+    },
+    {
+      "id": 3,
+      "visitorName": "Огнева Татьяна Дмитрьевна",
+      "name": "Ожидание",
+      "passPeriod": "01.10.2022",
+      "status": "Завершено",
+      "info": "info"
+    }
+  ]
+}
