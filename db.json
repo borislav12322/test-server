@@ -1,28 +1,581 @@
 {
-  "applicationList": [
-    {
-      "id": 1,
-      "visitorName": "Иванов Иван Алексеевич",
-      "name": "Ожидание",
-      "passPeriod": "20.10.2022",
-      "status": "Завершено",
-      "info": "info"
-    },
-    {
-      "id": 2,
-      "visitorName": "Анисимова Александра Александровна",
-      "name": "Ожидание",
-      "passPeriod": "20.10.2022",
-      "status": "Завершено",
-      "info": "info"
-    },
-    {
-      "id": 3,
-      "visitorName": "Огнева Татьяна Дмитрьевна",
-      "name": "Ожидание",
-      "passPeriod": "01.10.2022",
-      "status": "Завершено",
-      "info": "info"
-    }
-  ]
+  "parametersTableList": {
+    "list": [
+      {
+        "id": 1,
+        "parameter": "isLoading",
+        "description": "Новый клиент",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 2,
+        "parameter": "boardVoiceType",
+        "description": "Открытие вклада",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 3,
+        "parameter": "convertWaitToPrior",
+        "description": "Обмен валюты",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 4,
+        "parameter": "emailNotificationSMTPServerPassword",
+        "description": "Страхование",
+        "group": "Очередь",
+        "button": "test"
+      },
+      {
+        "id": 5,
+        "parameter": "terminalDefaultErrorText",
+        "description": "Открытие вклада",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 6,
+        "parameter": "test",
+        "description": "Страхование",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 7,
+        "parameter": "externalPasscardDispensedWSDLBasic",
+        "description": "Новый клиент",
+        "group": "Очередь",
+        "button": "test"
+      },
+      {
+        "id": 8,
+        "parameter": "externalPasscardDispensedWSDLBasicPassword",
+        "description": "Обмен валюты",
+        "group": "system",
+        "button": "test"
+      },
+      {
+        "id": 9,
+        "parameter": "emailNotificationSMTPServer",
+        "description": "Клиенты",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 10,
+        "parameter": "externalPasscardDispensedBody",
+        "description": "Страхование",
+        "group": "Клиенты",
+        "button": "test"
+      },
+      {
+        "id": 11,
+        "parameter": "test",
+        "description": "Страхование",
+        "group": "system",
+        "button": "test"
+      }
+    ],
+    "filterList": [
+      "Без фильтра",
+      "system",
+      "Клиенты",
+      "Очередь"
+    ]
+  },
+  "users": {
+    "usersList": [
+      {
+        "id": 1,
+        "name": "Иван Иванов",
+        "login": "admin",
+        "role": "Администратор",
+        "changed": "guard_admin",
+        "changeTime": "27.09.2077",
+        "isSettingsVisible": true
+      },
+      {
+        "id": 2,
+        "name": "Борис Борисов",
+        "login": "main_guard",
+        "role": "Глава охраны",
+        "changed": "hunter",
+        "changeTime": "01.01.2022"
+      },
+      {
+        "id": 3,
+        "name": "Олег Сидоров",
+        "login": "head_department",
+        "role": "Начальник отдела",
+        "changed": "guard_admin",
+        "changeTime": "01.09.2021"
+      },
+      {
+        "id": 4,
+        "name": "Василий Андреев",
+        "login": "root",
+        "role": "Администратор",
+        "changed": "guard_admin",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 5,
+        "name": "Андрей Васильев",
+        "login": "root",
+        "role": "Администратор",
+        "changed": "admin",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 6,
+        "name": "Вадим Владимиров",
+        "login": "root",
+        "role": "Администратор",
+        "changed": "head_department",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 7,
+        "name": "Денис Денисов",
+        "login": "head",
+        "role": "Администратор",
+        "changed": "CEO",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 8,
+        "name": "Сергей Сергеев",
+        "login": "root",
+        "role": "Младший администратор",
+        "changed": "guard_admin",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 9,
+        "name": "Дмитрий Анисенко",
+        "login": "guard_admin",
+        "role": "Вахтер",
+        "changed": "guard_admin",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 10,
+        "name": "Татьяна Кузнецова",
+        "login": "admin",
+        "role": "Администратор",
+        "changed": "guard_admin",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 11,
+        "name": "Григорий Григорьев",
+        "login": "guard",
+        "role": "Охраник",
+        "changed": "admin",
+        "changeTime": "27.09.2077"
+      },
+      {
+        "id": 12,
+        "name": "Алексей Алексеев",
+        "login": "guard",
+        "role": "Вахтер",
+        "changed": "head_department",
+        "changeTime": "21.01.2022"
+      }
+    ],
+    "filterList": ["Без фильтра", "Администратор", "Охраник", "Вахтер"]
+  },
+  "devices": {
+    "devicesList": [
+      {
+        "id": 1,
+        "name": "AUC",
+        "ipAddress": "192.168.59.202",
+        "port": 23954,
+        "terminalID": 1,
+        "changeDate": "25.04.2022",
+        "createDate": "25.04.2022",
+        "softVersion": "1.0"
+      },
+      {
+        "id": 2,
+        "name": "DTC-2",
+        "ipAddress": "192.168.59.186",
+        "port": 12933,
+        "terminalID": 2,
+        "changeDate": "25.04.2022",
+        "createDate": "25.04.2022",
+        "softVersion": "1.5"
+      },
+      {
+        "id": 3,
+        "name": "AVK",
+        "ipAddress": "192.168.59.178",
+        "port": 40285,
+        "terminalID": 3,
+        "changeDate": "25.04.2022",
+        "createDate": "25.04.2022",
+        "softVersion": "2.0"
+      },
+      {
+        "id": 4,
+        "name": "ATB",
+        "ipAddress": "192.168.59.194",
+        "port": 94856,
+        "terminalID": 4,
+        "changeDate": "25.04.2022",
+        "createDate": "25.04.2022",
+        "softVersion": "2.5"
+      }
+    ],
+    "softVersionList": [
+      "Без фильтра",
+      "1.0",
+      "1.5",
+      "2.0",
+      "2.5"
+    ]
+  },
+  "applications": {
+    "applicationsList": [
+      {
+        "id": 1,
+        "name": "Иванов Дмитрий Владимирович",
+        "objectAccess": "ДПТ (отм.+13.200) служебный проход",
+        "issued": "12",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      },
+      {
+        "id": 2,
+        "name": "Огнева Татьяна Дмитрьевна",
+        "objectAccess": "ДПТ (отм.+13.200) служебный проход",
+        "issued": "11",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      },
+      {
+        "id": 3,
+        "name": "Алексеева Надежда Александровна",
+        "objectAccess": "ДПТ (отм.+13.200) служебный проход",
+        "issued": "10",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      },
+      {
+        "id": 4,
+        "name": "Шевчук Юрий Борисович",
+        "objectAccess": "(ДПТ) Разовый пропуск в Картоприёмник",
+        "issued": "9",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      },
+      {
+        "id": 5,
+        "name": "Анисимова Александра Александровна",
+        "objectAccess": "(ДПТ) Разовый пропуск в Картоприёмник",
+        "issued": "8",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      },
+      {
+        "id": 6,
+        "name": "Ивлева Анастасия Владимировна",
+        "objectAccess": "ДПТ (отм.+13.200) служебный проход",
+        "issued": "3",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      },
+      {
+        "id": 7,
+        "name": "Иванов Иван Алексеевич",
+        "objectAccess": "(АУЦ) Учебный центр (DT) Центральный служебный проход",
+        "issued": "4",
+        "valid": "no",
+        "startDate": "25.04.2022",
+        "endDate": "25.04.2022",
+        "createDate": "25.04.2022"
+      }
+    ],
+    "objectsAccessList": [
+      "Без фильтра",
+      "(ДПТ) Разовый пропуск в Картоприёмник",
+      "(ЛЭРМ) Разовый пропуск в Картоприёмник",
+      "(АУЦ) Учебный центр (DT) Центральный служебный проход",
+      "ДПТ (отм.+13.200) служебный проход"
+    ]
+  },
+  "monitoring": {
+    "applicationList": [
+      {
+        "id": 1,
+        "visitorName": "Иванов Иван Алексеевич",
+        "name": "Ожидание",
+        "passPeriod": "20.10.2022",
+        "status": "Завершено",
+        "info": "info"
+      },
+      {
+        "id": 2,
+        "visitorName": "Анисимова Александра Александровна",
+        "name": "Ожидание",
+        "passPeriod": "12.02.2022",
+        "status": "Рассмотрение",
+        "info": "info"
+      },
+      {
+        "id": 3,
+        "visitorName": "Огнева Татьяна Дмитрьевна",
+        "name": "Готов",
+        "passPeriod": "22.09.2021",
+        "status": "Рассмотрение",
+        "info": "info"
+      }
+    ],
+    "terminalGeneralData": [
+      {
+        "id": 1,
+        "terminalID": 212,
+        "notPass": 2,
+        "passed": 1
+      },
+      {
+        "id": 2,
+        "terminalID": 112,
+        "notPass": 2,
+        "passed": 0
+      },
+      {
+        "id": 3,
+        "terminalID": 122,
+        "notPass": 2,
+        "passed": 12
+      }
+    ],
+    "activeSessions": [
+      {
+        "id": 1,
+        "user": "main_guard",
+        "role": "Начальник охраны"
+      },
+      {
+        "id": 2,
+        "user": "main",
+        "role": "Администратор"
+      },
+      {
+        "id": 3,
+        "user": "root user",
+        "role": "Администратор"
+      }
+    ],
+    "applicationFilterList": [
+      "Без фильтра",
+      "Рассмотрение",
+      "Завершено"
+    ],
+    "activeSessionsFilterList": [
+      "Без фильтра",
+      "Администратор",
+      "Начальник охраны"
+    ]
+  },
+  "reports": {
+    "viewsList": [
+      {
+        "id": 1,
+        "terminalID": 11,
+        "visitDate": "Tue Feb 01 2022 03:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 0
+      },
+      {
+        "id": 2,
+        "terminalID": 32,
+        "visitDate": "Fri Oct 01 2021 04:23:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      },
+      {
+        "id": 3,
+        "terminalID": 3,
+        "visitDate": "Mon Nov 22 2021 03:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 5
+      },
+      {
+        "id": 4,
+        "terminalID": 9,
+        "visitDate": "Sat May 01 2021 03:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 9
+      },
+      {
+        "id": 5,
+        "terminalID": 33,
+        "visitDate": "Thu Mar 17 2022 17:12:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 2
+      },
+      {
+        "id": 6,
+        "terminalID": 201,
+        "visitDate": "Fri Nov 05 2021 01:44:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 14
+      },
+      {
+        "id": 7,
+        "terminalID": 1,
+        "visitDate": "Fri Jun 04 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 5
+      }
+    ],
+    "validPassesList": [
+      {
+        "id": 1,
+        "terminalID": 11,
+        "objectName": "Ангар",
+        "visitDate": "Fri May 14 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      },
+      {
+        "id": 2,
+        "terminalID": 2,
+        "objectName": "Ангар",
+        "visitDate": "Mon Jan 11 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      },
+      {
+        "id": 3,
+        "terminalID": 265,
+        "objectName": "Ангар",
+        "visitDate": "Fri Mar 04 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      },
+      {
+        "id": 4,
+        "terminalID": 13,
+        "objectName": "Ангар",
+        "visitDate": "Fri Mar 25 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      },
+      {
+        "id": 5,
+        "terminalID": 113,
+        "objectName": "Ангар",
+        "visitDate": "Sat Jul 24 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      },
+      {
+        "id": 6,
+        "terminalID": 33,
+        "objectName": "Ангар",
+        "visitDate": "Tue Dec 14 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "passesCount": 1
+      }
+    ],
+    "invalidPassesList": [
+      {
+        "id": 1,
+        "terminalID": 212,
+        "objectName": "Таможня",
+        "visitDate": "Sun Nov 14 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "visitDateEnd": "Sun Nov 14 2021 19:10:00 GMT+0300 (Moscow Standard Time)",
+        "invalidPassesCount": 1
+      },
+      {
+        "id": 2,
+        "terminalID": 42,
+        "objectName": "Ангар",
+        "visitDate": "Wed Jun 02 2021 08:20:33 GMT+0300 (Moscow Standard Time)",
+        "visitDateEnd": "Tue Jun 01 2021 19:10:00 GMT+0300 (Moscow Standard Time)",
+        "invalidPassesCount": 0
+      },
+      {
+        "id": 3,
+        "terminalID": 11,
+        "objectName": "Терминал B",
+        "visitDate": "Mon Mar 14 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "visitDateEnd": "Mon Mar 14 2022 19:10:00 GMT+0300 (Moscow Standard Time)",
+        "invalidPassesCount": 0
+      },
+      {
+        "id": 4,
+        "terminalID": 467,
+        "objectName": "Таможня",
+        "visitDate": "Thu Dec 23 2021 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "visitDateEnd": "Tue Dec 14 2021 19:10:00 GMT+0300 (Moscow Standard Time)",
+        "invalidPassesCount": 22
+      },
+      {
+        "id": 5,
+        "terminalID": 312,
+        "objectName": "Аэродром",
+        "visitDate": "Wed Jan 05 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "visitDateEnd": "Fri Jan 14 2022 19:10:00 GMT+0300 (Moscow Standard Time)",
+        "invalidPassesCount": 5
+      }
+    ]
+  },
+  "logs": {
+    "logsList": [
+      {
+        "id": 1,
+        "visitDate": "Mon Jan 24 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "user": "dme\\ddenezhkin",
+        "action": "Изменение объекта на сервере",
+        "comment": "Message text: Satellite Name['AUC'], IP['192.168.59.202'];  Information: Нет ответа от сервера управления терминалом"
+      },
+      {
+        "id": 2,
+        "visitDate": "Sat Mar 05 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "user": "EQSYSTEMADDCSYNC",
+        "action": "Изменение объекта на сервере",
+        "comment": "satellite: ID(84)"
+      },
+      {
+        "id": 3,
+        "visitDate": "Tue Feb 22 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "user": "dme\\ddenezhkin",
+        "action": "Удаление объекта на сервере",
+        "comment": "Message text: Satellite Name['DTC-2'], IP['192.168.59.186'];  Information: В терминале разовых пропусков IP адрес 192.168.59.186 на объекте DTC-2 достигнут критический уровень заполнения диспенсера. Просьба восполнить количество разовых пропусков."
+      },
+      {
+        "id": 4,
+        "visitDate": "Wed Jan 05 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "user": "dme\\spozdnov",
+        "action": "Изменение объекта на сервере",
+        "comment": "user: dme\\spozdnov"
+      },
+      {
+        "id": 5,
+        "visitDate": "Mon Mar 14 2022 15:24:00 GMT+0300 (Moscow Standard Time)",
+        "user": "root",
+        "action": "Выход по веб (или удаление сессии по окончанию времени жизни сессии)",
+        "comment": "user: root"
+      }
+    ],
+    "usersList": [
+      "dme\\ddenezhkin",
+      "EQSYSTEMADDCSYNC",
+      "dme\\spozdnov",
+      "root"
+    ],
+    "actionsList": [
+      "Изменение объекта на сервере",
+      "Удаление объекта на сервере",
+      "Выход по веб (или удаление сессии по окончанию времени жизни сессии)"
+    ]
+  }
+
 }
